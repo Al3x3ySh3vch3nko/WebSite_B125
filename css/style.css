@@ -4,6 +4,7 @@
     --light-text-color: #cbcacb;
 
     --accent-color:#ffc222;
+    --dark-color:#303030;
 }
 
 *
@@ -46,17 +47,17 @@ li
 
 .header__top
 {
-    background-color: #303030;
+    background-color: var(--dark-color);
 }
 
 .header__btn
 {
     float: right;
-    line-height: 36px;
+    line-height: 45px;
     background-color: var(--accent-color);
 }
 
-.header__btn::after
+.header__contacts::after
 {
     content:"";
     clear: both;
@@ -69,5 +70,42 @@ li
     color: var(--light-text-color);
     letter-spacing: 0,25px;
     line-height: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header__content
+{
+    padding: 35px 0px 25px;
+}
+
+.header__content-inner
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li
+{
+    display: inline-block;
+}
+
+.menu li+li
+{
+    padding-left: 10px;
+}
+
+.menu a
+{
+    color: var(--dark-text-color);
+    line-height: 36px;
+    border: 1px solid transparent;
+    padding: 0px 16px;
+    transition: all 0.5s;
+}
+
+.menu a:hover
+{
+    border-color: var(--accent-color);
 }
 
