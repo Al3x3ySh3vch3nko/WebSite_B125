@@ -34,8 +34,11 @@
 .icon-quote-right:before {
   content: "\f10e";
 }
-.icon-angle-right:before {
+.icon-angle-right:after {
   content: "\e900";
+  color: #000;
+  position: absolute;
+  right: -27px;
 }
 .icon-angle-left:before {
   content: "\e901";
