@@ -27,7 +27,7 @@ a
     text-decoration: none;
     display: inline-block;
     color: var(--dark-text-color);
-    padding: 5px 20px 4px 50px;    
+    padding: 5px 20px;    
 }
 
 ul,
