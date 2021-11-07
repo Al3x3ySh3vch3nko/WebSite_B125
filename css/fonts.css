@@ -32,7 +32,16 @@
 }
 
 .icon-quote-right:before {
+  font-size: 1rem;
+  position: absolute;
+  top: 0px;
+  left: 70px;
+  color: #fff;
   content: "\f10e";
+  text-align: center;
+  width: 65px;
+  height: 30px;
+  background-color: var(--accent-color);
 }
 .icon-angle-right:after {
   content: "\e900";

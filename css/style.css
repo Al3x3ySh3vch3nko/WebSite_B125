@@ -10,6 +10,7 @@
 /* Company Section */
 /* Form Section */
 /* Advantages Section */
+/* News Section */
 
 /* ======== Root ========  */
 :root
@@ -27,10 +28,15 @@
     --slider-photo: url(../img/slider-photo.png);
     --company-photo: url(../img/company-photo.png);
     --advantages-photo: url(../img/advantages-photo.jpg);
+    --news-photo-1: url(../img/news-1.jpg);
+    --news-photo-2: url(../img/news-2.jpg);
 
     /* -------- Fonts -------- */
     --font-1: 'Roboto', sans-serif;
     --font-2: 'PT Serif', serif;
+
+    /* -------- Addition ------- */
+    --element-shadow: 0px 5px 15.4px 0.6px rgba(128, 127, 127, 0.13);
 }
 
 /* ======== All ========  */
@@ -47,6 +53,7 @@ body
     font-size: 1rem;
     line-height: 1.2rem;
     color:var(--dark-text-color);
+    background-color: #000;
 }
 
 a
@@ -69,19 +76,7 @@ h1, h2, h3, h4
 {
     font-family: var(--font-2);
 }
-
 /* ======== △ Components ======== */
-.△btn
-{
-    font-size: 14px;
-    line-height: 24px;
-    color: #fff;
-    font-weight: 500;
-    margin-top: 3rem;
-    padding: 8px 30px;
-    border: 1px solid var(--accent-color);
-    border-right-width: 50px;
-}
 
 .△box
 {
@@ -99,12 +94,38 @@ h1, h2, h3, h4
     border-style: solid;
 }
 
-/* ======== Effects ========*/
+.△btn-yellow
+{
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 3rem;
+    padding: 8px 30px;
+    border: 1px solid var(--accent-color);
+    border-right-width: 50px;
+}
+
+.△btn-transparent p
+{
+    border: 1px solid var(--dark-color);
+    padding: 10px;
+    margin-top: 50px;
+    letter-spacing: 0.25px;
+}
+
+/* ======== ◔ Effects ========*/
+.◔shadow
+{
+    box-shadow: var(--element-shadow);
+}
+
 
 /* ======== ▢ Wrapper (Container) ========*/
 .▢
 {
     max-width: 1170px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -273,14 +294,6 @@ h1, h2, h3, h4
     justify-content: space-around;
 }
 
-.about__btn p
-{
-    border: 1px solid var(--dark-color);
-    padding: 10px;
-    margin-top: 50px;
-    letter-spacing: 0.25px;
-}
-
 .about__items
 {
     display: grid;
@@ -373,7 +386,6 @@ img[src*=about-3]
 .form__box
 {
     max-width: 850px;
-    padding-top: 45px;
 }
 
 .form__inner
@@ -411,7 +423,6 @@ img[src*=about-3]
     margin-left: 100px;
     padding-right: 50px;
 }
-
 
 .form__box-inner label, input, textarea, select
 {
@@ -523,4 +534,93 @@ img[src*=about-3]
 {
     line-height: 24px;
     letter-spacing: 0.1px;  
+}
+
+/* ======== News Section ======== */
+
+.news-inner
+{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.news__slider
+{
+    max-width: 550px;
+    width: 100%;
+    padding: 60px 35px 45px 70px;
+}
+
+.news__slider-text
+{
+    font-family: var(--font-1);
+}
+
+.news__blog
+{
+    max-width: 250px;
+    width: 100%;
+}
+
+.news__top
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    min-height: 210px;
+    margin-top: 70px;
+}
+
+.news__blog
+{
+    position: relative;
+}
+
+.news-img-1::after
+{
+    content: '';
+    background: var(--news-photo-1) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 262px;
+    height: 190px;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.news-img-2::after
+{
+    content: '';
+    background: var(--news-photo-2) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 262px;
+    height: 190px;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.news__blog-title h4
+{
+    margin-top: 210px;
+}
+
+.news__date
+{
+    position: absolute;
+    font-weight: 700;
+    top: 0;
+    left: 10px;
+    width: 47px;
+    height: 54px;
+    background-color: var(--accent-color);
+    color: #000;
+}
+
+.news__date p
+{
+    padding-top: 12px;
 }
