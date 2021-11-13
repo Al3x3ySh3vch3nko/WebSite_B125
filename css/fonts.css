@@ -40,7 +40,8 @@
   content: "\f10e";
   text-align: center;
   width: 65px;
-  height: 30px;
+  height: 24px;
+  padding-top: 6px;
   background-color: var(--accent-color);
 }
 .icon-angle-right:after {
