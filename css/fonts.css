@@ -65,6 +65,8 @@
 }
 .icon-location2:before {
   content: "\e948";
+  padding-right: 15px;
+  color: var(--accent-color);
 }
 .icon-briefcase:before {
   content: "\e9ae";

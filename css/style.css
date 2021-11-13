@@ -3,6 +3,7 @@
 /* All */
 /* △ Components */
 /* ◔ Effects */
+/* ↕ Sizes */
 /* ▢ Wrapper (Container) */
 /* Header Section */
 /* Slider Section*/
@@ -11,6 +12,7 @@
 /* Form Section */
 /* Advantages Section */
 /* News Section */
+/* Footer */
 
 /* ======== Root ========  */
 :root
@@ -53,7 +55,6 @@ body
     font-size: 1rem;
     line-height: 1.2rem;
     color:var(--dark-text-color);
-    background-color: #000;
 }
 
 a
@@ -61,7 +62,7 @@ a
     text-decoration: none;
     display: inline-block;
     color: var(--dark-text-color);
-    padding: 5px 20px;    
+    padding-top: 5px;    
 }
 
 ul,
@@ -114,12 +115,16 @@ h1, h2, h3, h4
     letter-spacing: 0.25px;
 }
 
-/* ======== ◔ Effects ========*/
+/* ======== ◔ Effects ======== */
 .◔shadow
 {
     box-shadow: var(--element-shadow);
 }
 
+.↕p-y20
+{
+    padding: 0 20px;
+}
 
 /* ======== ▢ Wrapper (Container) ========*/
 .▢
@@ -644,4 +649,62 @@ img[src*=about-3]
 .news__date p
 {
     padding-top: 12px;
+}
+
+/* ======== Footer ======== */
+footer
+{
+    color:#fff;
+    margin-top: 50px;
+    padding-top: 40px;
+    background-color: var(--border-color);
+}
+
+.footer__content
+{
+    background-color: var(--border-color);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    margin-bottom: 50px;
+}
+
+.footer__content-left
+{
+    max-width: 500px;
+}
+
+.footer__content-right iframe
+{
+    width: 630px;
+    height: 250px;
+}
+
+.footer__info p
+{
+    padding: 10px 0 10px;
+}
+
+.footer__info h3
+{
+    margin: 0;
+}
+
+.footer__list
+{
+    margin-top: 20px;
+}
+
+.footer__list a
+{
+    line-height: 24px;
+    color: black;
+}
+
+.footer__end
+{
+    padding: 23px 0;
+    text-align: center;
+    background-color: var(--dark-color);
 }
