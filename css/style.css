@@ -163,6 +163,11 @@ h1, h2, h3, h4
     padding-right: 20px;
 }
 
+.header__logo
+{
+    padding-left: 10px;
+}
+
 .header__content
 {
     padding: 35px 0px 25px;
