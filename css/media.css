@@ -1,4 +1,3 @@
-
 @media (max-width:720px)
 {
     .header__contacts
@@ -48,6 +47,23 @@
         margin-bottom: 20px;
     }
 }
+@media (max-width:640px)
+{
+    .slider__item-content
+    {
+        font-size: 1rem;
+        text-align: left;
+        min-width: unset;
+    }
+
+}
+@media (max-width:700px)
+{
+    .slider__btn
+    {
+        margin-left: 0;
+    }
+}
 @media (max-width:560px)
 {
     .header__phone
@@ -66,7 +82,6 @@
 {
     .slider__inner button
     {
-        display: none; 
-        background-color: #fff;
+        display: none;
     }
 }

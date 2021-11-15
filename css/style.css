@@ -308,6 +308,8 @@ h1, h2, h3, h4
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+;
 }
 
 .about__items img
@@ -328,7 +330,7 @@ img[src*=about-3]
 
 .about__item-text
 {
-    padding: 0px 30px;
+    padding: 15px 30px;
 }
 
 .about__item-links
