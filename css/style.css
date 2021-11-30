@@ -674,8 +674,8 @@ footer
     color: black;
     display: flex;
     justify-content: space-between;
-    height: 250px;
-    margin-bottom: 50px;
+    height: auto;
+    margin-bottom: 15px;
 }
 
 .footer__content-left
@@ -710,9 +710,16 @@ footer
     color: black;
 }
 
+.footer__content-right iframe
+{
+    height: 250px;
+}
+
 .footer__end
 {
     padding: 23px 0;
     text-align: center;
     background-color: var(--dark-color);
 }
+
+
